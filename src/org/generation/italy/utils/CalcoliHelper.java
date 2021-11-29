@@ -42,6 +42,14 @@ public class CalcoliHelper {
 		}
 		return y;
 	}
+	
+	public static int power(int x, int y) { // x è il numero da elevare, y è la potenza
+		int power = x;
+		for(int i = 1; i < y; i++) {
+			power = power * x;
+		}
+		return power;
+	}
 
 	// overload metodi per double
 	public static double somma(double x, double y) {
