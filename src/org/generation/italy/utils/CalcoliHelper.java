@@ -9,26 +9,39 @@ public class CalcoliHelper {
 	private int x;
 	private int y;
 
-	public static int sommaInt(int x, int y) {
-		int sommaInt = x + y;
-		return sommaInt;
+	public static int somma(int x, int y) {
+		int somma = x + y;
+		return somma;
 	}
 	
-	public static int differenzaInt(int x, int y) {
-		int differenzaInt = x - y;
-		return differenzaInt;
+	public static int sottrai(int x, int y) {
+		int sottrai = x - y;
+		return sottrai;
 	}
 	
-	public static int moltiplicaInt(int x, int y) {
-		int moltiplicaInt = x * y;
-		return moltiplicaInt;
+	public static int moltiplica(int x, int y) {
+		int moltiplica = x * y;
+		return moltiplica;
 	}
 	
-	public static int valoreAssolutoInt(int x) {
+	public static int valoreAssoluto(int x) {
 		if(x < 0) {
 			x = x * -1;
 		}
 		return x;
 	}
 	
+	public static int min(int x, int y) {
+		if(x < y) {
+			return x;
+		}
+		return y;
+	}
+	
+	public static int max(int x, int y) {
+		if(x > y) {
+			return x;
+		}
+		return y;
+	}
 }
