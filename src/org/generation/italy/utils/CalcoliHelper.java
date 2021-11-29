@@ -5,10 +5,8 @@ public class CalcoliHelper {
 	private CalcoliHelper() {
 		// costruttore private così non posso creare istanze
 	}
-	
-	private int x;
-	private int y;
 
+	// metodi per int
 	public static int somma(int x, int y) {
 		int somma = x + y;
 		return somma;
@@ -44,4 +42,42 @@ public class CalcoliHelper {
 		}
 		return y;
 	}
+
+	// overload metodi per double
+	public static double somma(double x, double y) {
+		double somma = x + y;
+		return somma;
+	}
+	
+	public static double sottrai(double x, double y) {
+		double sottrai = x - y;
+		return sottrai;
+	}
+	
+	public static double moltiplica(double x, double y) {
+		double moltiplica = x * y;
+		return moltiplica;
+	}
+	
+	public static double valoreAssoluto(double x) {
+		if(x < 0) {
+			x = x * -1;
+		}
+		return x;
+	}
+	
+	public static double min(double x, double y) {
+		if(x < y) {
+			return x;
+		}
+		return y;
+	}
+	
+	public static double max(double x, double y) {
+		if(x > y) {
+			return x;
+		}
+		return y;
+	}
+	
 }
